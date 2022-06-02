@@ -1,0 +1,25 @@
+public class TestLista {
+
+    public static void main(String [] args) {
+        Lista l = new Lista();
+        System.out.println("�Vac�a?: " + l.EstaVacia());
+        System.out.println("\nSize: " + l.Size());
+        l.InsertaInicio(12);
+        System.out.println("�Vac�a?: " + l.EstaVacia());
+        System.out.println("\nSize: " + l.Size());
+        l.Print();
+        l.InsertaInicio(32);
+        System.out.println("\nSize: " + l.Size());
+        l.Print();
+        l.InsertaFinal(51);
+        System.out.println("\nSize: " + l.Size());
+        l.Print();
+
+        System.out.println("");
+        System.out.println("El promedio de la lista es "+l.SacarPromedio());
+
+        System.out.print("Los elementos por sobre el promedio son: ");
+        l.sobrePromedio(l, l.SacarPromedio()).Print();
+
+    }
+}
