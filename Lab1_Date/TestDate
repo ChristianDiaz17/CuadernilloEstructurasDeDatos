@@ -1,0 +1,14 @@
+public class TestDate {
+
+    public static void main(String[] args) {
+
+        Date fecha = new Date();
+        fecha.setMinutos(6);
+        fecha.setHora(4);
+        fecha.setDia(2);
+        fecha.setMes(5);
+        fecha.setAño(1789);
+
+        System.out.println(fecha.toString());
+    }
+}
