@@ -1,0 +1,13 @@
+public class Ejercicio_1791 {
+    //1791: Encontrar el centro de la estrella de grafo
+    /*
+    El metodo revisara uno de los lados de las primeras dos filas de la matriz en busca de revisar
+    si estos poseen un valor en comun entre sus columnas, si esto ocurre, entonces retornara
+    el valor comun, sino, retornara -1.
+     */
+
+    public int findCenter(int[][] edges) {
+        if(edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1]) return edges[0][0];
+        return edges[0][1];
+    }
+}
